@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dom Manipulation Odin Exercises</title>
+	<script type="text/javascript" src="script.js" defer></script>
+</head>
+
+<body>
+	<button type="button">Don't click me</button>
+
+	<!-- Method one -->
+	<!-- not ideal since we're mixing js in html file -->
+	<button onclick="alert('Hello World')">Click Me One</button>
+
+	<!-- Method two -->
+	<!-- dom element can only have 1 onclick property -->
+	<button id="btn">Click Me Two</button>
+
+	<!-- Method three -->
+	<!-- allow multiple event listeners; more flexible -->
+	<button id="btn3">Click Me Three</button>
+
+	<br> <br>
+
+	<!-- using alertFunction() -->
+	<!-- Method one -->
+	<button onclick="alertFunction()">Click Me One Again</button>
+
+	<!-- Method two -->
+	<button id="btn2F">Click Me Two Again</button>
+
+	<!-- Method three -->
+	<button id="btn3F">Click Me Three Again</button>
+</body>
+</html>
