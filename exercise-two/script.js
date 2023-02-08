@@ -1,3 +1,5 @@
+const container = document.getElementById('container');
+
 // Method two
 const btn = document.querySelector('#btn');
 btn.onclick = () => alert("Hello World");
@@ -25,4 +27,19 @@ btn3F.addEventListener('click', alertFunction)
 // e references the event itself
 btn3F.addEventListener('click', function (e){
 	e.target.style.background = 'blue';
+});
+
+// attaching listeners to group of nodes
+// use querySelectorAll to get nodelist of all items from a matching selector
+// add listening to each of them - iterate through the list
+
+// buttons is a nodelist containing all buttons in the container
+const buttons = container.querySelectorAll('button');
+
+//use .forEach method to iterate through each button
+buttons.forEach((button) => {
+	// add a click listener to ever button
+	button.addEventListener('click', () => {
+		alert(button.id);
+	});
 });
