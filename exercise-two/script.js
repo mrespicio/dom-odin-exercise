@@ -43,3 +43,4 @@ buttons.forEach((button) => {
 		alert(button.id);
 	});
 });
+
